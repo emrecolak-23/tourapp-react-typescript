@@ -1,4 +1,4 @@
-import './header-logo-box.styles.css'
+import './header-logo-box.styles.scss'
 import logo from '../../assets/img/logo-white.png';
 
 const HeaderLogoBox = () => {

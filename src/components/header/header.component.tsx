@@ -1,4 +1,4 @@
-import './header.styles.css'
+import './header.styles.scss'
 import HeaderLogoBox from '../header-logo-box/header-logo-box.component'
 import HeaderTextBox from '../header-text-box/header-text-box.component'
 const Header = () => {

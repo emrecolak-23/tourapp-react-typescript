@@ -1,4 +1,4 @@
-import './header-text-box-title.styles.css'
+import './header-text-box-title.styles.scss'
 const HeaderTextBoxTitle = () => {
     return (
         <h1 className='heading-primary'>
