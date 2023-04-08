@@ -1,13 +1,10 @@
 import './header-text-box.styles.css'
 import HeaderTextBoxButton from '../header-text-box-button/header-text-box-button.component'
-
+import HeaderTextBoxTitle from '../header-text-box-title/header-text-box-title.component'
 const HeaderTextBox = () => {
     return (
-    <div className='text-box'>
-        <h1 className='heading-primary'>
-            <span className='heading-primary-main'>Outdoors</span>
-            <span className='heading-primary-sub'>is where life happens</span>
-        </h1>
+    <div className='header__text-box'>
+        <HeaderTextBoxTitle />
         <HeaderTextBoxButton />
     </div>
     )
