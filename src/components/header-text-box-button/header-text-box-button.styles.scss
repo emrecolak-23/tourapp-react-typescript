@@ -1,4 +1,4 @@
-@use '../../variables' as vars;
+@use '../../sass/base/variables' as vars;
 
 .btn {
 
@@ -56,18 +56,5 @@
     /* animation: animation-name animation-duration animation-timing-function animation-delay */
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
-  }
-}
-
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(-3rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
   }
 }

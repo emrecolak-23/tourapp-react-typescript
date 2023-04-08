@@ -1,4 +1,4 @@
-@use '../../variables' as vars;
+@use '../../sass/base/variables' as vars;
 
 .heading-primary {
   color: vars.$color-white;
@@ -12,7 +12,6 @@
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-  
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -29,7 +28,6 @@
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1.74rem;
-
     animation: moveInRight 1s ease-out;
     /* 
       animation-name: moveInRight;
@@ -42,38 +40,4 @@
 
 
 
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
 
-  /* 60% {
-      transform: rotate(180deg);
-    } */
-
-  80% {
-    transform: translateX(1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  80% {
-    transform: translateX(-1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
