@@ -1,9 +1,12 @@
 import Header from "./components/header/header.component"
-
+import Main from "./components/main/main.component"
+import SectionAbout from "./components/section-about/section-about.component"
 const App = () => {
   return <div>
     <Header />
-    
+    <Main>
+      <SectionAbout />
+    </Main>
     {/* <section className="grid-test">
       <div className="row">
         <div className="col-1-of-2">Col 1 of 2</div>
