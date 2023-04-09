@@ -1,0 +1,15 @@
+@use '../../sass/base/variables' as vars;
+
+.heading-tertiary {
+    font-size: vars.$default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: vars.$default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
