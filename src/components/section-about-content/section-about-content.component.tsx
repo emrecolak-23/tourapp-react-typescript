@@ -1,5 +1,7 @@
 import SectionTextContent from "../section-text-content/section-text-content.component"
 import ButtonDetail from "../button-detail/button-detail.component"
+import ImageComposition from "../image-composition/image-composition.component"
+
 const SectionAboutContent = () => {
 
     const contents = [
@@ -29,7 +31,9 @@ const SectionAboutContent = () => {
             }
             <ButtonDetail title="Read more" />
         </div>
-        <div className="col-1-of-2">Image Composition</div>
+        <div className="col-1-of-2">
+            <ImageComposition />
+        </div>
       </div>
     )
 }
