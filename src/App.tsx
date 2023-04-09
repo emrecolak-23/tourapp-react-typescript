@@ -1,11 +1,13 @@
 import Header from "./components/header/header.component"
 import Main from "./components/main/main.component"
 import SectionAbout from "./components/section-about/section-about.component"
+import SectionFeatures from "./components/section-features/section-features.component"
 const App = () => {
   return <div>
     <Header />
     <Main>
       <SectionAbout />
+      <SectionFeatures />
     </Main>
     {/* <section className="grid-test">
       <div className="row">
