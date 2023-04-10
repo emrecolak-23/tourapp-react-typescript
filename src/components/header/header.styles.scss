@@ -13,4 +13,6 @@
   background-position: top;
   /** polygon(x y, x y, x y, x y) **/
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
 }
