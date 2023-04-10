@@ -8,17 +8,20 @@ const SectionTours = () => {
         {
             no: 1,
             title: 'The sea explorer',
-            details: ['3 day tours', 'Up to 30 people', '2 tour guides', 'Sleep in cozy hotels', 'Difficulty: easy']
+            details: ['3 day tours', 'Up to 30 people', '2 tour guides', 'Sleep in cozy hotels', 'Difficulty: easy'],
+            price: 497
         },
         {
             no: 2,
             title: 'The forest hiker',
-            details: ['7 day tours', 'Up to 50 people', '6 tour guides', 'Sleep in provided tents', 'Difficulty: medium']
+            details: ['7 day tours', 'Up to 50 people', '6 tour guides', 'Sleep in provided tents', 'Difficulty: medium'],
+            price: 497
         },
         {
             no: 3,
             title: 'The snow adventurer',
-            details: ['5 day tours', 'Up to 15 people', '3 tour guides', 'Sleep in provided tenst', 'Difficulty: hard']
+            details: ['5 day tours', 'Up to 15 people', '3 tour guides', 'Sleep in provided tenst', 'Difficulty: hard'],
+            price: 897
         }
     ]
 
@@ -33,6 +36,7 @@ const SectionTours = () => {
                             title={tour.title}
                             details={tour.details}
                             cardNo={tour.no}
+                            price={tour.price}
                             />
                         })
                     }

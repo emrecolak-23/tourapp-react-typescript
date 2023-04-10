@@ -7,10 +7,11 @@ import SectionToursCardFront from '../section-tours-card-front/section-tours-car
 interface SectionToursCardProps {
     cardNo: number,
     title: string,
-    details: string[]
+    details: string[],
+    price: number
 }
 
-const SectionToursCard:FC<SectionToursCardProps> = ({cardNo, title, details}) => {
+const SectionToursCard:FC<SectionToursCardProps> = ({cardNo, title, details, price}) => {
   
     return (
     <div className="col-1-of-3">
@@ -20,7 +21,7 @@ const SectionToursCard:FC<SectionToursCardProps> = ({cardNo, title, details}) =>
             title={title}
             details={details} 
             />
-            <SectionToursCardBack cardNo={cardNo} />
+            <SectionToursCardBack cardNo={cardNo} price={price} />
        </div>
     </div>
     )

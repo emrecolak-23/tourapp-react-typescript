@@ -5,7 +5,9 @@ const HeaderTextBox = () => {
     return (
     <div className='header__text-box'>
         <HeaderTextBoxTitle />
-        <PrimaryButton colorClass='btn--white' />
+        <PrimaryButton colorClass='btn--white' >
+            Discover Our Tours
+        </PrimaryButton>
     </div>
     )
 }
