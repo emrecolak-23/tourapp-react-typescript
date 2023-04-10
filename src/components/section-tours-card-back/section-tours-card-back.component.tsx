@@ -26,7 +26,7 @@ const SectionToursCardBack:FC<SectionToursCardBackProps> = ({cardNo, price}) => 
                         ${price}
                     </p>
                 </div>
-                <PrimaryButton colorClass='btn--white' >
+                <PrimaryButton color='white' >
                     Book Now!
                 </PrimaryButton>
             </div>

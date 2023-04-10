@@ -5,13 +5,16 @@ import classNames from 'classnames'
 import React from 'react'
 
 interface PrimaryButtonProps {
-    colorClass: string
+    color: string
     children: React.ReactNode
 }
 
-const PrimaryButton:FC<PrimaryButtonProps> = ({children , colorClass}) => {
+const PrimaryButton:FC<PrimaryButtonProps> = ({children , color}) => {
 
-    const classes = classNames('btn btn--animated', colorClass)
+    const classes = classNames('btn btn--animated', {
+        'btn--white': color==='white',
+        'btn--green': color==='green'
+    })
 
     return <a href="#" className={classes}>{children}</a>
 }

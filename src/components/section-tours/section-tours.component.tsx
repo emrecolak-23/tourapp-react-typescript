@@ -1,7 +1,7 @@
 import './section-tours.styles.scss'
 import SectionTitle from "../section-title/section-title.component"
 import SectionToursCard from '../section-tours-card/section-tours-card.component'
-
+import PrimaryButton from '../button-primary/button-primary.component'
 const SectionTours = () => {
 
     const tours = [
@@ -40,7 +40,11 @@ const SectionTours = () => {
                             />
                         })
                     }
-                 
+                </div>
+                <div className="u-center-text u-margin-top-huge">
+                    <PrimaryButton color='green' >
+                        Discover All Tours
+                    </PrimaryButton>
                 </div>
         </section>
     )
