@@ -2,6 +2,7 @@ import './section-stories.styles.scss'
 import SectionTitle from '../section-title/section-title.component'
 import SectionStoriesList from '../section-stories-list/section-stories-list.component'
 import ButtonDetail from '../button-detail/button-detail.component'
+import SectionStoriesBgVideo from '../section-stories-bg-video/section-stories-bg-video.component'
 const SectionStories = () => {
 
     const stories = [
@@ -27,6 +28,7 @@ const SectionStories = () => {
 
     return (
         <section className="section-stories">
+            <SectionStoriesBgVideo />
             <SectionTitle text="We make people genuily happy" extraClass="u-margin-bottom-big" />
             <SectionStoriesList stories={stories} />
             <div className='u-center-text u-margin-top-huge'>
