@@ -1,0 +1,16 @@
+@use '../../sass/base/variables' as vars;
+
+.story {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color: vars.$color-black, $alpha: .2);
+    background-color: vars.$color-white;
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: vars.$default-font-size;
+    transform: skewX(-12deg);
+
+
+  
+}
