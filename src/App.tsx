@@ -4,7 +4,7 @@ import SectionAbout from "./components/section-about/section-about.component"
 import SectionFeatures from "./components/section-features/section-features.component"
 import SectionTours from "./components/section-tours/section-tours.component"
 import SectionStories from "./components/section-stories/section-stories.component"
-
+import SectionBook from "./components/section-book/section-book.component"
 const App = () => {
   return <div>
     <Header />
@@ -13,6 +13,7 @@ const App = () => {
       <SectionFeatures />
       <SectionTours />
       <SectionStories />
+      <SectionBook />
     </Main>
     {/* <section className="grid-test">
       <div className="row">
