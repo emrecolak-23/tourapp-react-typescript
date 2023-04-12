@@ -1,0 +1,23 @@
+@use '../../sass/base/variables' as vars;
+
+.footer {
+    &__link {
+        &:link,
+        &:visited {
+            color: vars.$color-grey-light-1;
+            background-color: vars.$color-gray-dark-3;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .3s;
+        }
+
+        &:hover,
+        &:active {
+            color: vars.$color-primary;
+            box-shadow: 0 1rem 2rem rgba($color: vars.$color-black, $alpha: 0.4);
+            transform: rotate(5deg) scale(1.2);
+
+        }
+    }
+}

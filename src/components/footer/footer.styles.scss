@@ -1,0 +1,6 @@
+@use '../../sass/base/variables' as vars;
+.footer {
+    background-color: vars.$color-gray-dark-3;
+    padding: 10rem 0;
+    font-size: 1.4rem;
+}
