@@ -6,8 +6,10 @@ import SectionTours from "./components/section-tours/section-tours.component"
 import SectionStories from "./components/section-stories/section-stories.component"
 import SectionBook from "./components/section-book/section-book.component"
 import Footer from "./components/footer/footer.component"
+import Navigation from "./components/navigation/navigation.component"
 const App = () => {
   return <div>
+    <Navigation />
     <Header />
     <Main>
       <SectionAbout />

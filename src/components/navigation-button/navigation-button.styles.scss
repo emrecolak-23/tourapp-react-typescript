@@ -1,0 +1,18 @@
+@use '../../sass/base/variables' as vars;
+
+.navigation {
+    &__button {
+        background-color: vars.$color-white;
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        z-index: 2000;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+}
