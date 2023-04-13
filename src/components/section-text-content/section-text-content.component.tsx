@@ -5,19 +5,21 @@ import classNames from 'classnames'
 interface SectionTextContentProp {
     title: string,
     paragraph: string,
-    extraHeadingClass?: string
+    extraHeadingClass?: string,
+    extraParagraphClass?: string
 }
 
-const SectionTextContent:FC<SectionTextContentProp> = ({title, paragraph, extraHeadingClass}) => {
+const SectionTextContent:FC<SectionTextContentProp> = ({title, paragraph, extraHeadingClass, extraParagraphClass}) => {
    
    const headingClass = classNames('heading-tertiary', extraHeadingClass)
+   const paragraphClass = classNames('paragraph', extraParagraphClass)
     
    return (
         <>
             <h3 className={headingClass}>
                 {title}
             </h3>
-            <p className="paragraph">
+            <p className={paragraphClass}>
                 {paragraph}
             </p>
         </>

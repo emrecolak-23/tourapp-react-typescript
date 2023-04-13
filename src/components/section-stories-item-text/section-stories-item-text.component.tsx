@@ -1,5 +1,6 @@
 import './section-stories-item-text.styles.scss'
 import { FC } from 'react'
+import SectionTextContent from '../section-text-content/section-text-content.component'
 
 interface SectionStoriesItemTextProps {
     comment: {
@@ -11,12 +12,7 @@ interface SectionStoriesItemTextProps {
 const SectionStoriesItemText:FC<SectionStoriesItemTextProps> = ({comment}) => {
     return (
     <div className="story__text">
-        <h3 className="heading-tertiary u-margin-bottom-small">
-            {comment.title}
-        </h3>
-        <p>
-            {comment.content}
-        </p>
+       <SectionTextContent title={comment.title} paragraph={comment.content} extraHeadingClass='u-margin-bottom-small' />
     </div>
     )
 }

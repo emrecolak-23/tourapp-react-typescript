@@ -7,6 +7,7 @@ import SectionStories from "./components/section-stories/section-stories.compone
 import SectionBook from "./components/section-book/section-book.component"
 import Footer from "./components/footer/footer.component"
 import Navigation from "./components/navigation/navigation.component"
+import Popup from "./components/popup/popup.component"
 const App = () => {
   return <div>
     <Navigation />
@@ -17,8 +18,11 @@ const App = () => {
       <SectionTours />
       <SectionStories />
       <SectionBook />
-      <Footer />
     </Main>
+    <Footer />
+
+    <Popup/>
+
     {/* <section className="grid-test">
       <div className="row">
         <div className="col-1-of-2">Col 1 of 2</div>
