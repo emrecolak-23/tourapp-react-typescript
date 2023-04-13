@@ -26,7 +26,7 @@ const SectionToursCardBack:FC<SectionToursCardBackProps> = ({cardNo, price}) => 
                         ${price}
                     </p>
                 </div>
-                <PrimaryButton color='white' >
+                <PrimaryButton color='white' href='popup'>
                     Book Now!
                 </PrimaryButton>
             </div>

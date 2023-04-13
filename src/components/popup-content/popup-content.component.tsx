@@ -14,6 +14,7 @@ const PopupContent = () => {
                 <img src={Photo2} alt="Tour photo" className='popup__img' />
             </div>
             <div className="popup__right">
+                <a href="#section-tours" className="popup__close">&times;</a>
                 <SectionTitle text='Start booking now' extraClass='u-margin-bottom-medium'/>
                 <SectionTextContent 
                 title='Important &ndash; Please read these terms before booking'

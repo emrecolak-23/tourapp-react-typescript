@@ -8,9 +8,10 @@ interface PrimaryButtonProps {
     color: string
     children: React.ReactNode,
     isButton?: boolean
+    href?:string
 }
 
-const PrimaryButton:FC<PrimaryButtonProps> = ({children , color, isButton}) => {
+const PrimaryButton:FC<PrimaryButtonProps> = ({children , color, isButton, href}) => {
 
     const classes = classNames('btn btn--animated', {
         'btn--white': color==='white',
@@ -21,7 +22,7 @@ const PrimaryButton:FC<PrimaryButtonProps> = ({children , color, isButton}) => {
         return <button className={classes}>{children}</button>
     }
 
-    return <a href="#" className={classes}>{children}</a>
+    return <a href={`#${href}`} className={classes}>{children}</a>
 }
 
 export default PrimaryButton

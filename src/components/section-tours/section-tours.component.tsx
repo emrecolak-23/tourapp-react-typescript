@@ -26,7 +26,7 @@ const SectionTours = () => {
     ]
 
     return (
-        <section className="section-tours">
+        <section className="section-tours" id='section-tours'>
                 <SectionTitle text='Most popular tours' extraClass="u-margin-bottom-big" />
                 <div className="row">
                     {
