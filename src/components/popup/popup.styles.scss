@@ -6,12 +6,20 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba($color: vars.$color-black, $alpha: 0.8);
     z-index: 2500;
     opacity: 0;
     visibility: hidden;
     transition: all .3;
+    background-color: rgba($color: vars.$color-black, $alpha: 0.8);
+
+
+    @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color: vars.$color-black, $alpha: 0.3);
+    }
     
+
     &:target {
         opacity: 1;
         visibility: visible;
