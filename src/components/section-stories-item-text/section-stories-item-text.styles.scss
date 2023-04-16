@@ -1,5 +1,11 @@
+@import '../../sass/abstracts/mixins';
+
 .story {
     &__text {
         transform: skewX(12deg);
+    }
+
+    @include respond(phone) {
+        transform: skewX(0);
     }
 }

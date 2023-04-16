@@ -1,4 +1,5 @@
 @use '../../sass/base/variables' as vars;
+@import '../../sass/abstracts/mixins';
 
 .story {
     width: 75%;
@@ -11,5 +12,14 @@
     font-size: vars.$default-font-size;
     transform: skewX(-12deg);
 
+    @include respond(tab-port) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
+    @include respond(phone) {
+        transform: skewX(0);
+    }
   
 }
