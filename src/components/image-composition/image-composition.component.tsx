@@ -13,20 +13,20 @@ const ImageComposition = () => {
 
         <img 
         srcSet={`${photo1Normal} 300w, ${photo1} 1000w`} 
-        sizes='(max-width: 900x) 20vw, (max-width: 600px) 30vw, 300px'
+        sizes='(max-width: 65.25em) 20vw, (max-width: 37.5em) 30vw, 300px'
         className="composition__photo composition__photo--p1"
         src={photo1}
         />
          <img 
         srcSet={`${photo2Normal} 300w, ${photo2} 1000w`} 
-        sizes='(max-width: 900x) 20vw, (max-width: 600px) 30vw, 300px'
+        sizes='(max-width: 65.25em) 20vw, (max-width: 37.5em) 30vw, 300px'
         className="composition__photo composition__photo--p2"
         src={photo2}
         />
          <img 
         srcSet={`${photo3Normal} 300w, ${photo3} 1000w`} 
-        sizes='(max-width: 900x) 20vw, (max-width: 600px) 30vw, 300px'
-        className="composition__photo composition__photo--p2"
+        sizes='(max-width: 65.25em) 20vw, (max-width: 37.5em) 30vw, 300px'
+        className="composition__photo composition__photo--p3"
         src={photo3}
         />
 
