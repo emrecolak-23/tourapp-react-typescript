@@ -6,12 +6,10 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-
+@import 'sass/abstracts/mixins';
 @import 'sass/base/variables';
 @import 'sass/base/animations';
-@import 'sass/abstracts/mixins';
 @import 'sass/base/utilities';
-
 @import 'sass/layout/grid';
 
 *,
@@ -56,4 +54,11 @@ body {
   color: $color-gray-dark;
   padding: 3rem;
   box-sizing: border-box;
+
+  @include respond(tab-port) {
+    padding: 0;  
+  }
+
 }
+
+

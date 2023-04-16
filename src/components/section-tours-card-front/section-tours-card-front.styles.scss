@@ -1,5 +1,5 @@
 @use '../../sass/base/variables' as vars;
-
+@import '../../sass/abstracts/mixins';
 .card {
     &__picture {
         background-size: cover;
@@ -65,6 +65,12 @@
                     border-bottom: 1px solid vars.$color-grey-light-2;
                 }
             }
+        }
+    }
+
+    @include respond(tab-port) {
+        &__details {
+            padding: 1rem 3rem;
         }
     }
 }

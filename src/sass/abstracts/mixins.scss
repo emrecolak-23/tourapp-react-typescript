@@ -6,15 +6,21 @@
     }
 }
 
+
+
 /*
 $breakpoint argument choices
 -phone
 -tab-port
 -tab-land
 -big-desktop
+
+ORDER: Base + typograpyh > general layout + grid > page layout > component
+
 */
 
 @mixin respond($breakpoint) {
+    
     @if $breakpoint == phone {
         @media (max-width: 37.5em) { // 600 px
             @content
@@ -38,6 +44,7 @@ $breakpoint argument choices
             @content
         }   
     }
+   
 }
 
 

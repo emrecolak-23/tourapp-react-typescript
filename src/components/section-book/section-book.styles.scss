@@ -1,8 +1,13 @@
 @use '../../sass/base/variables' as vars;
+@import '../../sass/abstracts/mixins';
 
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom,  vars.$color-primary-light, vars.$color-primary-dark);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .book {
